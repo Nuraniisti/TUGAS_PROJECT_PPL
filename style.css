@@ -59,13 +59,13 @@
   nav .menu ul li {
     list-style-type: none;
     float: left;
-    line-height: 60px;
+    line-height: 120px;
   }
   
   nav ul li a {
     color: #fff;
     text-align: center;
-    padding: 0px 16px 0px 16px;
+    padding: 10px 15px 10px 15px;
     text-decoration: none;
   }
   
@@ -104,7 +104,7 @@
     background-color: #94d65e;
     height: 40px;
     line-height: 42px;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     display: inline-block;
     padding: 0px 20px 0px 20px;
@@ -147,7 +147,7 @@
     display: block;
     margin: 20px auto;
   }
-  #aboutus,
+  #TentangKita,
   #team,
   #blog {
     text-align: center;
@@ -175,99 +175,49 @@
   section.abuabu {
     background-color: #f5f6f6;
   }
-  .support,
-  .tim,
-  .blog {
+  .Pengaturan,
+  .Gallery,
+  .tim {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
-  .support h6,
+  .Pengaturan h6,
   .tim h6 {
     margin: 0px;
-    margin-top: 20px;
+    margin-top: 25px;
     padding: 0px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
   }
-  .support img {
-    width: 50px;
+  .Pengaturan img {
+    width: 150px;
   }
-  .support div,
+  .Pengaturan div,
   .tim div {
     text-align: center;
-    width: 26%;
+    width: 25%;
   }
-  section#gallery {
+  section#Gallery {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    overflow: hidden;
-    padding: 10px 0px 10px 0px;
   }
-  section#gallery div {
-    padding: 10px;
+  section#Gallery div {
+    padding: 20px;
   }
-  section#gallery div img {
-    height: 100px;
-    border-radius: 5px;
+  section#Gallery div img {
+    height: 200px;
+    border-radius: 40px;
   }
-  section#gallery div img:hover {
+  section#Gallery div img:hover {
     transition: all 0.2s ease-in-out;
     transform: scale(1.1);
-  }
-  section.quote {
-    background: url("asset/background-bromo.jpg") no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
-    font-style: italic;
-    padding: 100px;
-  }
-  section.quote .layar-dalam p {
-    display: inline;
-    background: url("asset/quote-icon.png") no-repeat;
-    padding: 40px;
   }
   .tim img {
     width: 100%;
     box-shadow: 0px -10px 30px #ccc;
     border-radius: 5px;
-  }
-  .blog .area {
-    width: 47%;
-    box-shadow: 0px -10px 30px #ccc;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .blog div.area div {
-    width: 50%;
-  }
-  .blog .area .gambar {
-    border-radius: 5px 0px 0px 5px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-  }
-  .blog .area .text article {
-    padding: 40px;
-  }
-  .blog .area .text article h4 {
-    margin: 0px;
-  }
-  .blog .area .text article a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.5s ease;
-  }
-  .blog .area .text article a:hover {
-    color: #ccc;
   }
   footer {
     padding: 50px 0px 50px 0px;
@@ -317,16 +267,6 @@
     }
     .tombol-menu {
       display: flex;
-    }
-    .blog .area {
-      display: block;
-    }
-    .blog div.area div {
-      width: 100%;
-    }
-    .blog .area .gambar {
-      border-radius: 5px 5px 0px 0px;
-      height: 200px;
     }
     .support {
       display: block;
