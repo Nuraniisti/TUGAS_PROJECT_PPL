@@ -1,61 +1,61 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+var swiper = new Swiper('.mySwiper', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 //menu
-var tombolMenu = $(".tombol-menu");
-var menu = $("nav .menu ul");
+var tombolMenu = $('.tombol-menu');
+var menu = $('nav .menu ul');
 
 function klikMenu() {
-    tombolMenu.click(function () {
-        menu.toggle();
-    });
-    menu.click(function () {
-        menu.toggle();
-    });
+  tombolMenu.click(function () {
+    menu.toggle();
+  });
+  menu.click(function () {
+    menu.toggle();
+  });
 }
 
 $(document).ready(function () {
-    var width = $(window).width();
-    if (width < 990) {
-        klikMenu();
-    }
-})
+  var width = $(window).width();
+  if (width < 990) {
+    klikMenu();
+  }
+});
 
 //check lebar
 $(window).resize(function () {
-    var width = $(window).width();
-    if (width > 989) {
-        menu.css("display", "block");
-        //display:block
-    } else {
-        menu.css("display", "none");
-    }
-    klikMenu();
+  var width = $(window).width();
+  if (width > 989) {
+    menu.css('display', 'block');
+    //display:block
+  } else {
+    menu.css('display', 'none');
+  }
+  klikMenu();
 });
 
-//efek scroll 
+//efek scroll
 $(document).ready(function () {
-    var scroll_pos = 0;
-    $(document).scroll(function () {
-        scroll_pos = $(this).scrollTop();
-        if (scroll_pos > 0) {
-            $("nav").addClass("putih");
-            $("nav img.hitam").show();
-            $("nav img.putih").hide();
-        } else {
-            $("nav").removeClass("putih");
-            $("nav img.hitam").hide();
-            $("nav img.putih").show();
-        }
-    })
+  var scroll_pos = 0;
+  $(document).scroll(function () {
+    scroll_pos = $(this).scrollTop();
+    if (scroll_pos > 0) {
+      $('nav').addClass('putih');
+      $('nav img.hitam').show();
+      $('nav img.putih').hide();
+    } else {
+      $('nav').removeClass('putih');
+      $('nav img.hitam').hide();
+      $('nav img.putih').show();
+    }
+  });
 });
