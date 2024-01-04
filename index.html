@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kutahu</title>
+    <!-- SWIPER CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- CSS-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -96,32 +99,61 @@
           </div>
         </section>
         <section id="Gallery">
-          <div><img src="asset/foto2.jpg" /></div>
-          <div><img src="asset/foto1.jpg" /></div>
-          <div><img src="asset/foto3.jpg" /></div>
-        </section>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <img src="asset/foto1.jpg" alt="">
+              <div>
+                <h2>VIDEO</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="asset/foto2.jpg" alt="">
+              <div>
+                <h2>FOTO</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="asset/foto3.jpg" alt="">
+              <div>
+                <h2>QUIZ</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
         <section id="team">
           <div class="layar-dalam">
             <h3>Team</h3>
-            <p class="ringkasan">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-              laborum!
-            </p>
             <div class="tim">
               <div>
-                <img src="asset/kosong1.jpeg" />
-                <h6>Heru</h6>
-                <span>Design</span>
+                <img src="asset/gambar000.png" />
+                <h6>Malik</h6>
+                <span>Manajer Proyek</span>
               </div>
               <div>
-                <img src="asset/kosong2.jpeg" />
+                <img src="asset/agi.jpeg" />
                 <h6>Agi</h6>
                 <span>Marketing</span>
               </div>
               <div>
-                <img src="asset/kosong3.jpeg" />
-                <h6>Adam</h6>
-                <span>Pengembangan</span>
+                <img src="asset/gambar000.png" />
+                <h6>Sarah</h6>
+                <span>Marketing</span>
+              </div>
+              <div>
+                <img src="asset/isti.jpeg" />
+                <h6>Nurani</h6>
+                <span>RND</span>
+              </div>
+              <div>
+                <img src="asset/ico.jpeg" />
+                <h6>Verico</h6>
+                <span>Keuangan</span>
               </div>
               <div>
                 <img src="asset/kosong3.jpeg" />
@@ -129,24 +161,14 @@
                 <span>Pengembangan</span>
               </div>
               <div>
-                <img src="asset/kosong3.jpeg" />
-                <h6>Adam</h6>
-                <span>Pengembangan</span>
+                <img src="asset/heru.jpg" />
+                <h6>Heru</h6>
+                <span>Design</span>
               </div>
               <div>
-                <img src="asset/kosong3.jpeg" />
-                <h6>Adam</h6>
-                <span>Pengembangan</span>
-              </div>
-              <div>
-                <img src="asset/kosong3.jpeg" />
-                <h6>Adam</h6>
-                <span>Pengembangan</span>
-              </div>
-              <div>
-                <img src="asset/kosong3.jpeg" />
-                <h6>Adam</h6>
-                <span>Pengembangan</span>
+                <img src="asset/gambar000.png" />
+                <h6>Kemal</h6>
+                <span>Pengujian</span>
               </div>
             </div>
           </div>
@@ -181,7 +203,9 @@
       </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    ></script>
+    <script src="javascript.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="javascript.js"></script>
   </body>
 </html>
